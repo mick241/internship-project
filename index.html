@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - Buy & Sell Properties</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="buyer-login.html" class="btn">Buyer Login</a></li>
+            <li><a href="broker-login.html" class="btn btn-outline">Broker Login</a></li>
+           
+        </ul>
+    </nav>
+     <!-- Sliding Images Section -->
+     <div class="carousel">
+        <div class="carousel-images">
+            <img src="slide1.jpg" alt="Slide 1">
+            <img src="slide2.jpg" alt="Slide 2">
+            <img src="slide3.jpg" alt="Slide 3">
+        </div>
+       <div class="hero-content">
+            <h1>Find Your Dream Property</h1>
+            <p>Explore the best properties for buying and selling with us.</p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Search Section -->
+    <section id="search-section">
+        <div class="search-box">
+            <select id="states" class="search-select">
+                <option>Select State</option>
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh </option>
+                <option>Assam</option>
+                <option>Bihar</option> 
+                <option>Goa</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Himachal Pradesh</option>
+                <option>Jharkhand</option> 
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option> 
+                <option>Manipur</option>
+                <option>Mizoram</option>
+                <option>Nagaland</option>
+                <option>Odisha</option> 
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Sikkim</option>
+                <option>Delhi</option>
+                <option>Telangana</option>
+                <option>Tripura</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Meghalaya</option>
+                <option>Tamil Nadu</option>
+                <option>Uttar Pradesh</option>
+
+            </select>
+            <div class="search-options">
+                <a href="#buy">Buy</a>
+                <a href="#rent">Rent</a>
+                <a href="#project">Project</a>
+                <a href="#commercial">Commercial</a>
+            </div>
+            <input type="text" class="search-bar" placeholder="Search for properties...">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We connect buyers and sellers in the most trusted and transparent way. Our platform offers a seamless property search and management experience.</p>
+    </section>
+
+    <section id="properties">
+        <h2>Featured Properties</h2>
+        <div class="property-list">
+            <div class="property">
+                <img src="h1.jpg" alt="Beautiful Family Home" class="property-image">
+                <h3>Beautiful Family Home</h3>
+                <p>4 beds, 3 baths, 2,500 sqft</p>
+                <p>Rs.50000000</p>
+                <a href="property-details.html" class="btn">View Details</a>
+            </div>
+            <div class="property">
+                <img src="img2.jpg" alt="Modern Apartment" class="property-image">
+                <h3>Modern Apartment</h3>
+                <p>2 beds, 2 baths, 1,200 sqft</p>
+                <p>Rs.350,00000</p>
+                <a href="property-details.html" class="btn">View Details</a>
+            </div>
+            <div class="property">
+                <img src="r2.jpg" alt="Luxury Villa" class="property-image">
+                <h3>Luxury Villa</h3>
+                <p>5 beds, 4 baths, 4,000 sqft</p>
+                <p>Rs.1CR</p>
+                <a href="property-details.html" class="btn">View Details</a>
+            </div>
+        </div>
+        <!-- <div class="property-thumbnails">
+            <img src="r1.jpg" alt="Additional View 1" class="thumbnail" onclick="openGallery(0, 1)">
+            <img src="r3.jpg" alt="Additional View 2" class="thumbnail" onclick="openGallery(0, 2)">
+            <img src="r4.jpg" alt="Additional View 3" class="thumbnail" onclick="openGallery(0, 3)">
+        </div> -->
+        <!-- Modal Gallery -->
+    <div id="gallery-modal" class="modal">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="modal-content">
+            <img id="gallery-image" src="" alt="Gallery Image">
+            <div class="thumbnail-list" id="thumbnail-container">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The team was incredibly helpful in finding our dream home!"</p>
+            <h4>- Raj</h4>
+        </div>
+        <div class="testimonial">
+            <p>"A seamless experience from start to finish. Highly recommend!"</p>
+            <h4>- Kim</h4>
+        </div>
+    </section>
+
+    <section id="founders">
+        <h2>Founders' Desk</h2>
+        <div class="founder">
+            <img src="surbhi.jpg" alt="Surbhi Arora" class="founder-image">
+            <h3>Surbhi Arora</h3>
+            <p>A seasoned real estate expert with over 5 years in the industry.</p>
+        </div>
+        <div class="founder">
+            <img src="utsav.jpg" alt="Utsav Mishra" class="founder-image">
+            <h3>Utsav Mishra</h3>
+            <p>An innovative entrepreneur focused on bringing technology to real estate.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Prime Estates</h4>
+                <ul>
+                    
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Price Trends</a></li>
+                    <li><a href="#">Post your Property</a></li>
+                    <li><a href="#">Real Estate Investments</a></li>
+                    <li><a href="#">Builders in India</a></li>
+                   
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Rent Receipt</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    <li><a href="#">Careers with us</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Report a problem</a></li>
+                    
+                    <li><a href="policyprivacy.html">Privacy Policy</a></li>
+                    
+                    <li><a href="#">Safety Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Our Partners</h4>
+                <ul>
+                    <li><a href="#">Naukri.com - Jobs in India</a></li>
+                    <li><a href="#">Naukrigulf.com - Jobs in middle east</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-sectioncontact">
+                <h4>Contact Us</h4>
+                <p>Toll Free - 1800-2560-96</p>
+                <p>9:30 AM to 6:30 PM (Mon-Sun)</p>
+                <p>Email -primeestaes@contactus.com</p>
+                <h4>Connect with us</h4>
+                <div class="social-icons">
+                    <a href="#">&#xf09a;</a> <!-- Facebook -->
+                    <a href="#">&#xf099;</a> <!-- Twitter -->
+                    <a href="#">&#xf16d;</a> <!-- Instagram -->
+                    <a href="#">&#xf16a;</a> <!-- YouTube -->
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All trademarks are the property of their respective owners. All rights reserved - Info Edge (India) Ltd.</p>
+            <p><a href="#">report abuse</a></p>
+        </div>
+    </footer>
+</body>
+</html>
